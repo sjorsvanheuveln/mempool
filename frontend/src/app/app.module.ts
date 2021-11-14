@@ -24,6 +24,7 @@ import { MasterPageComponent } from './components/master-page/master-page.compon
 import { BisqMasterPageComponent } from './components/bisq-master-page/bisq-master-page.component';
 import { LiquidMasterPageComponent } from './components/liquid-master-page/liquid-master-page.component';
 import { AboutComponent } from './components/about/about.component';
+import { AccountComponent } from './components/account/account.component';
 import { TelevisionComponent } from './components/television/television.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { ChartistComponent } from './components/statistics/chartist.component';
@@ -45,7 +46,7 @@ import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { FeesBoxComponent } from './components/fees-box/fees-box.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faAngleDown, faAngleUp, faAngleRight, faAngleLeft, faBolt, faChartArea, faCogs, faCubes, faDatabase, faExchangeAlt, faInfoCircle,
+import { faUser, faAngleDown, faAngleUp, faAngleRight, faAngleLeft, faBolt, faChartArea, faCogs, faCubes, faDatabase, faExchangeAlt, faInfoCircle,
   faLink, faList, faSearch, faCaretUp, faCaretDown, faTachometerAlt, faThList, faTint, faTv, faAngleDoubleDown, faSortUp, faAngleDoubleUp, faChevronDown, faFileAlt, faRedoAlt, faArrowAltCircleRight, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { ApiDocsComponent } from './components/api-docs/api-docs.component';
 import { CodeTemplateComponent } from './components/api-docs/code-template.component';
@@ -60,6 +61,7 @@ import { SponsorComponent } from './components/sponsor/sponsor.component';
   declarations: [
     AppComponent,
     AboutComponent,
+    AccountComponent,
     MasterPageComponent,
     BisqMasterPageComponent,
     LiquidMasterPageComponent,
@@ -121,6 +123,7 @@ import { SponsorComponent } from './components/sponsor/sponsor.component';
 export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(faInfoCircle);
+    library.addIcons(faUser);
     library.addIcons(faChartArea);
     library.addIcons(faTv);
     library.addIcons(faTachometerAlt);

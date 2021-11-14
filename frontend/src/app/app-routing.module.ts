@@ -6,6 +6,7 @@ import { BlockComponent } from './components/block/block.component';
 import { AddressComponent } from './components/address/address.component';
 import { MasterPageComponent } from './components/master-page/master-page.component';
 import { AboutComponent } from './components/about/about.component';
+import { AccountComponent } from './components/account/account.component';
 import { TelevisionComponent } from './components/television/television.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { MempoolBlockComponent } from './components/mempool-block/mempool-block.component';
@@ -60,6 +61,10 @@ let routes: Routes = [
       {
         path: 'about',
         component: AboutComponent,
+      },
+      {
+        path: 'account',
+        component: AccountComponent,
       },
       {
         path: 'api',
